@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.Master.cs" Inherits="Project.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>ADVENTURE LAND</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Style.master.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-image:url(Images/rollar99.jpg);background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;">
+    <script type="text/javascript" src="Scripts/WebForms/indexScript.js" language="javascript"></script>  
+    <form id="form1" runat="server">
+    <div>
+        <div id="layout">
+            <div id='header' >
+                <div class="right">
+                    <div style="border:5px;border-color:black;background-image:url(Images/blue2.jpg);background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;">
+                    <h2><b>Administrator Login</b></h2>
+                        <asp:Label ID="LabelInvalidusermsg" runat="server" ForeColor="Red" Text="Invalid User Name or Password" Visible="false"></asp:Label>       
+                            
+                        <table>    
+                            <tr>
+                                <td><b>Login ID:</b></td>
+                                <td><asp:TextBox ID="TextBoxUserName" runat="server" placeholder="Username"></asp:TextBox></td>
+                            </tr>
+                            <tr>
+                                <td><b>Password:</b></td>
+                                <td><asp:TextBox ID="TextBoxPassword" TextMode="Password" runat="server" placeholder="Password"></asp:TextBox></td></tr>        
+                            <tr>
+                                <td style="text-align:center;"><asp:Button ID="BtnLogin" class="button" runat="server" Text="Login" onclick="BtnLogin_Click" /></td>
+                            </tr>        
+                   </table>
+                   </div>
+              </div>
+                <div id='logo'class="left">
+                    <img src="images/photoshopnew.png" alt="logoo" />
+                </div>
+                 
+        </div>
+            <br />
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><a href='index.aspx'><span>HOME</span></a></li>
+   
+                <li class='has-sub'><a href="Attractions.aspx"><span>ATTRACTIONS</span></a>
+                    <ul>
+                        <li class='has-sub'><a href='#'><span>Themed Areas</span></a>
+                            <ul>
+                               <li><a href="Attractions.aspx"><span>BOOMER's LAND</span></a></li>
+                               <li><a href="Attractions.aspx"><span>AQUA LAND</span></a></li>
+                               <li><a href="Attractions.aspx"><span>JOY LAND</span></a></li>
+                               <li class='last'><a href="Attractions.aspx"><span>DOREMON LAND</span></a></li>
+                            </ul>
+                        </li>
+                         <li class='has-sub'><a href='Attractions.aspx'><span>Shows</span></a>
+                            <ul>
+                               <li><a href='Attractions.aspx'><span>Sub Item</span></a></li>
+                               <li><a href='Attractions.aspx'><span>Sub Item</span></a></li>
+                               <li><a href='Attractions.aspx'><span>Sub Item</span></a></li>
+                               <li class='last'><a href='Attractions.aspx'><span>Sub Item</span></a></li>
+                            </ul>
+                         </li>
+         
+                         <li><a href='Attractions.aspx'><span>Cinema</span></a></li>
+                         <li><a href='Attractions.aspx'><span>Resturant</span></a></li>
+                         <li><a href='Attractions.aspx'><span>Hotel</span></a></li>
+                    </ul>
+                </li>
+
+               <li class='has-sub'><a href='Tickets.aspx'><span>TICKET PRICES</span></a>
+                   <ul>
+                         <li><a href='Tickets.aspx'><span>Prices</span></a></li>
+                         <li><a href='#'><span>Special Offers</span></a></li>
+                         <li class='has-sub'><a href='#'><span>Membership</span></a>
+                            <ul>
+                               <li><a href='#'><span>Annual Membership</span></a></li>
+                               <li><a href='#'><span>Summer Membership</span></a></li>
+                               <li class='last'><a href='#'><span>Winter Membership</span></a></li>
+                            </ul>
+                         </li>
+                         <li><a href='#'><span>Vacations Pakages</span></a></li>
+                    </ul>
+               </li>
+
+
+               <li class='has-sub'><a href='#'><span>PLAN YOUR VISIT</span></a> 
+                   <ul>
+                         <li><a href='#'><span>Park Information</span></a></li>
+                         <li><a href='#'><span>Tickets & Prices</span></a></li>
+                         <li><a href='#'><span>Disables Access</span></a></li>
+                         <li><a href='#'><span>Opening Times</span></a></li>
+                         <li><a href='#'><span>Where To Eat</span></a></li>
+                         <li><a href='#'><span>FAQs</span></a></li>
+                         <li><a href='Contact.aspx'><span>Contact Us</span></a></li>      
+                   </ul>
+               </li>
+
+               <li class='has-sub'><a href='#'><span>INFO & SERVICES</span></a>
+                   <ul>
+                         <li><a href='#'><span>Latest News</span></a></li>
+                         <li><a href='#'><span>Opening Times</span></a></li>
+                         <li><a href='#'><span>Handicaped Persons</span></a></li>
+                         <li><a href='#'><span>Park Rules</span></a></li>
+                         <li><a href='#'><span>Jobs</span></a></li>
+                         <li><a href='#'><span>FAQs</span></a></li>
+                   </ul>
+               </li>
+
+               <li><a href='#'><span>SPECIAL OFFERS</span></a></li>
+       
+               <li class='last'><a href='Contact.aspx'><span>CONTACT US</span></a></li>
+            </ul>
+        </div>
+        
+
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">       
+        </asp:ContentPlaceHolder>
+
+
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
